@@ -1,0 +1,75 @@
+<header>
+    <div class="header">
+        <div id="search-btn">
+            <i class="bi bi-search search-icon"></i>
+        </div>
+
+        <div class="categories-cont">
+            <div class="category">
+                <h4><a href="#">{{ selected_categories.0 }}</a></h4>
+            </div>
+            <div class="category">
+                <h4><a href="#">{{ selected_categories.1 }}</a></h4>
+            </div>
+            <div class="category">
+                <h4><a href="#">{{ selected_categories.2 }}</a></h4>
+            </div>
+        </div>
+
+        <div class="logo-cont">
+            <h1>LOGO</h1>
+        </div>
+
+        <div class="categories-cont">
+            <div class="category">
+                <h4><a href="#">{{ selected_categories.3 }}</a></h4>
+            </div>
+            <div class="category">
+                <h4><a href="#">{{ selected_categories.4 }}</a></h4>
+            </div>
+            <div class="category">
+                <h4><a href="#">{{ selected_categories.5 }}</a></h4>
+            </div>
+        </div>
+
+        <div id="menu-btn">
+            <i class="bi bi-list"></i>
+        </div>
+    </div>
+    <div class="search-cont">
+        <div class="search-box">
+            <i class="bi bi-search"></i>
+            <input type="text" placeholder="Search...">
+            <button type="submit">
+                <h4>Search</h4>
+            </button>
+        </div>
+    </div>
+    <div class="menu">
+        <ul class="menu-list">
+            {% if not authenticated %}
+            <li class="menu-item">
+                <i class="bi bi-person-fill"></i>
+                <p><a href="#">Login/Sign up</a></p>
+            </li>
+            {% else %}
+            <li class="menu-item">
+                <i class="bi bi-person-fill"></i>
+                <p><a href="#">Your Feed</a></p>
+            </li>
+            <li class="menu-item">
+                <i class="bi bi-journal-bookmark-fill"></i>
+                <p><a href="#">Read Later</a></p>
+            </li>
+            <li class="menu-item">
+                <i class="bi bi-clock-history"></i>
+                <p><a href="#">History</a></p>
+            </li>
+            <li class="menu-item">
+                <i class="bi bi-box-arrow-right"></i>
+                <p><a href="#">Sign Out</a></p>
+            </li>
+            {% endif %}
+        </ul>
+    </div>
+</header>
