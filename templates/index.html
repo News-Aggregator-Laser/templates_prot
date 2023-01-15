@@ -1,6 +1,18 @@
 {% extends '__base.html' %}
+{% load static %}
 
 {% block content %}
 {% include "components/slider.html" %}
+
+<section class="popular-section">
+    <h1>Popular Now <object class="trend-svg" data="{% static 'svgs/trend-up-bold-svgrepo-com.svg' %}"
+            type="image/svg+xml"></object></h1>
+    <div class="articles-section">
+        {% for article in popular_news %}
+        {% include "components/article.html" %}
+        <div class="article-end-line"></div>
+        {% endfor %}
+    </div>
+</section>
 
 {% endblock %}

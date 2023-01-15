@@ -7,12 +7,33 @@
 
 html {
     background-color: #F4E6D9;
+    overflow-x: hidden;
 }
 
 i {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+/*============= Scroll Bar =============*/
+body::-webkit-scrollbar {
+    width: 13px;
+    /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+    background: #F4E6D9;
+    /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #be7d3f;
+    /* color of the scroll thumb */
+    border-radius: 20px;
+    /* roundness of the scroll thumb */
+    border: 3px solid #F4E6D9;
+    /* creates padding around scroll thumb */
 }
 
 /*============= Header =============*/
@@ -44,7 +65,7 @@ header i {
     color: #000;
 }
 
-/*search box*/
+/*============= Search Box =============*/
 .search-cont {
     margin-top: 5px;
     width: 100%;
@@ -60,7 +81,6 @@ header i {
     align-items: center;
     margin-bottom: 1vh;
 }
-
 
 .search-box input {
     background-color: #FACA9D;
@@ -78,7 +98,8 @@ header i {
     padding: 0px 8px;
 }
 
-/*menu*/
+
+/*============= Menu =============*/
 .menu {
     border-radius: 0 0 20px 20px;
     background-color: #FACA9D;
@@ -119,7 +140,8 @@ header i {
     background-color: #f4d1b1;
 }
 
-/*Slider*/
+
+/*============= Slider =============*/
 .slider {
     width: 100vw;
     height: 60vh;
@@ -175,4 +197,86 @@ header i {
     color: black;
     padding: 3px 5px;
     border-radius: 7px;
+}
+
+
+/*============= Article =============*/
+.article {
+    width: 600px;
+    height: 150px;
+    margin-top: 1vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.article .article-info-cont {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 1vh;
+}
+
+.article h3 a {
+    text-decoration: none;
+    color: #000;
+}
+
+.article .article-img-cont {
+    width: 40%;
+    height: 100%;
+    background-color: #000;
+}
+
+.article .article-img-cont img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/*============= Articles Section =============*/
+.articles-section {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 1vh;
+}
+
+.article-end-line {
+    width: 100%;
+    height: 3px;
+    border-radius: 5px;
+    background-color: #000;
+    margin-top: 1vh;
+}
+
+
+/*============= Popular Now Section =============*/
+.popular-section {
+    margin-top: 1vh;
+    position: absolute;
+    top: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-left: 3vw;
+}
+
+.popular-section h1 {
+    margin-bottom: 3vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.7rem;
+}
+
+.popular-section .trend-svg {
+    padding-left: 5px;
+    width: 40px;
+    height: 40px;
 }

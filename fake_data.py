@@ -7,7 +7,6 @@ import django
 django.setup()
 
 from news.models import New
-
 from faker import Faker
 
 faker = Faker()
