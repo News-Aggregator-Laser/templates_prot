@@ -145,7 +145,7 @@ header i {
 .slider {
     width: 100vw;
     height: 60vh;
-    position: absolute;
+    position: relative;
     background-color: #000;
     margin-top: 1vh;
 }
@@ -257,9 +257,8 @@ header i {
 
 /*============= Popular Now Section =============*/
 .popular-section {
-    margin-top: 1vh;
-    position: absolute;
-    top: 70vh;
+    margin-top: 5vh;
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: flex-start;
