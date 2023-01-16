@@ -29,7 +29,24 @@ toggleMenu();
 document.querySelector("#menu-btn").addEventListener("click", toggleMenu);
 
 
-// Slider code
-const next_btn = document.querySelector(".next-btn");
-const prev_btn = document.querySelector(".prev-btn");
-
+// ========== Swiper ========== //
+var swiper = new Swiper(".mySwiper", {
+    loop: true,
+    pagination: {
+        el: ".swiper-pagination",
+        type: "progressbar",
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+        pauseOnMouseEnter: true,
+    },
+    effect: 'fade',
+    fadeEffect: {
+        crossFade: true
+    },
+});
