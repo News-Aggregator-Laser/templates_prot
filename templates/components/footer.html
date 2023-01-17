@@ -1,11 +1,10 @@
-{% load static %}
 <footer>
     <div class="subscribe-section">
         <h1 class="subscribe-text">Subscribe to our newsletter</h1>
         <p class="subscribe-subtext">Get boring news day by day :)</p>
         <div class="form-container">
             <input type="text" placeholder="Email Address" class="email-input" style="background-color:black;">
-            <button class="subscribe-button" style="height:50px;width:150px;">Subscribe</button>
+            <button class="subscribe-button">Subscribe</button>
         </div>
     </div>
     <div class="info-section">
@@ -18,20 +17,22 @@
             <div class="col-2">
                 <h2>Categories</h2>
                 <div class="category">
-                <h4><a href="#">{{ selected_categories.0 }}</a></h4>
-            </div>
-            <div class="category">
-                <h4><a href="#">{{ selected_categories.1 }}</a></h4>
-            </div>
-            <div class="category">
-                <h4><a href="#">{{ selected_categories.2 }}</a></h4>
-            </div>
+                    <h4><a href="#">{{ selected_categories.0 }}</a></h4>
+                </div>
+                <div class="category">
+                    <h4><a href="#">{{ selected_categories.1 }}</a></h4>
+                </div>
+                <div class="category">
+                    <h4><a href="#">{{ selected_categories.2 }}</a></h4>
+                </div>
             </div>
             <div class="col-3">
                 <h2>Follow us</h2>
-                <img src="{% static 'img/instagram-logo.png' %}" alt="Instagram Logo">
-                <img src="{% static 'img/facebook-logo.png' %}" alt="Facebook Logo">
-                <img src="{% static 'img/twitter-logo.png' %}" alt="Twitter Logo">
+                <div class="social-icons">
+                    <a href="#"><i class="bi bi-instagram"></i></a>
+                    <a href="#"><i class="bi bi-facebook"></i></a>
+                    <a href="#"><i class="bi bi-twitter"></i></a>
+                </div>
             </div>
         </div>
     </div>
