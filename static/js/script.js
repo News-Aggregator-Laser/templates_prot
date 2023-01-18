@@ -29,11 +29,11 @@ toggleMenu();
 document.querySelector("#menu-btn").addEventListener("click", toggleMenu);
 
 
-// ========== Swiper ========== //
-var swiper = new Swiper(".mySwiper", {
+// ========== Top Swiper ========== //
+var top_swiper = new Swiper(".top-swiper", {
     loop: true,
     pagination: {
-        el: ".swiper-pagination",
+        el: ".top-swiper-pagination",
         type: "progressbar",
     },
     navigation: {
@@ -48,5 +48,19 @@ var swiper = new Swiper(".mySwiper", {
     effect: 'fade',
     fadeEffect: {
         crossFade: true
+    },
+});
+
+
+// ========== Category Swiper ========== //
+var category_swiper = new Swiper(".category-swiper", {
+    loop: true,
+    pagination: {
+        el: ".category-swiper-pagination",
+        clickable: true,
+    },
+    autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
     },
 });

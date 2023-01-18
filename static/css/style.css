@@ -157,25 +157,25 @@ header i {
 }
 
 
-/*============= Slider =============*/
-.swiper {
+/*============= Top Slider =============*/
+.top-swiper {
     width: 100%;
     height: 75vh;
 }
 
-.swiper-slide img {
+.top-swiper-slide img {
     display: block;
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.swiper .img {
+.top-swiper .img {
     width: 100%;
     height: 100%;
 }
 
-.swiper .article-info {
+.top-swiper .article-info {
     position: absolute;
     top: 65%;
     left: 7%;
@@ -217,6 +217,14 @@ header i {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.swiper-pagination-horizontal {
+    background-color: #cead8f !important;
+}
+
+.swiper-pagination-progressbar-fill {
+    background-color: #a36830 !important;
 }
 
 /*============= Article (component) =============*/
@@ -297,6 +305,106 @@ header i {
     padding-left: 5px;
     width: 40px;
     height: 40px;
+}
+
+
+/*============= Top Category News =============*/
+.top-category-news {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+    height: 200px;
+    margin-bottom: 10px;
+}
+
+.top-category-news .category-title {
+    width: 50%;
+}
+
+.top-category-news .category-title h1 {
+    font-size: 3rem;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+.top-category-news .category-title h3 {
+    font-size: 1.1rem;
+    margin-left: 10px;
+    font-weight: normal;
+}
+
+.top-category-news a {
+    text-decoration: none;
+    color: var(--main-font-color);
+}
+
+.top-category-news a:hover {
+    text-decoration: underline;
+}
+
+
+/*====== Category Swiper ======*/
+.category-swiper {
+    width: 50%;
+    height: 100%;
+}
+
+.category-swiper-slide {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.category-swiper-slide img {
+    width: 40%;
+    height: 100%;
+}
+
+.category-swiper-slide .article-info {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.category-swiper-slide .article-info h2 {
+    font-size: 1.2rem;
+}
+
+.category-swiper-slide .article-info h4 {
+    font-weight: normal;
+}
+
+.category-swiper-pagination {
+    display: flex;
+    justify-content: flex-start;
+    background-color: rgba(255, 255, 255, 0) !important;
+}
+
+.swiper-pagination-bullet-active {
+    background: #010508 !important;
+}
+
+/*============= Top Categories News Section =============*/
+.top-categories-news {
+    width: 92vw;
+    margin: 1vh 4vw
+}
+
+.end-top-categories-news-line {
+    width: 100%;
+    height: 5px;
+    border-radius: 5px;
+    background-color: var(--main-font-color);
 }
 
 

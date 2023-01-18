@@ -4,6 +4,15 @@
 {% block content %}
 {% include "components/slider.html" %}
 
+
+<section class="top-categories-news">
+    {% for category, articles in top_in_categories.items %}
+    {% include "components/top_category_news.html" %}
+    <div class="end-top-categories-news-line"></div>
+    {% endfor %}
+</section>
+
+
 <section class="popular-section">
     <h1>Popular Now <object class="trend-svg" data="{% static 'svgs/trend-up-bold-svgrepo-com.svg' %}"
             type="image/svg+xml"></object></h1>

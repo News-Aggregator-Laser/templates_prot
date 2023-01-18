@@ -1,7 +1,7 @@
-<div class="swiper mySwiper">
-    <div class="swiper-wrapper">
+<div class="swiper top-swiper">
+    <div class="swiper-wrapper top-swiper-wrapper">
         {% for article in top_news %}
-        <div class="swiper-slide">
+        <div class="swiper-slide top-swiper-slide">
             <a href="#">
                 <img src="{{ article.image_url }}" alt="{{ article.title }}">
             </a>
@@ -21,5 +21,5 @@
     </div>
     <div class="swiper-button-next"></div>
     <div class="swiper-button-prev"></div>
-    <div class="swiper-pagination"></div>
+    <div class="swiper-pagination top-swiper-pagination"></div>
 </div>
