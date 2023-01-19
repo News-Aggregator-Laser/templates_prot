@@ -514,3 +514,22 @@ footer .social-icons a {
 footer .social-icons i {
     font-size: 1.3rem;
 }
+
+
+.cbtn {
+background-color:black;
+height:30px;
+width:80px;
+color: blanchedalmond;
+border-radius:20% ;
+}
+.divimg {
+width : 80%;
+height :450px;
+ position : center ;
+ background-color: black;
+ }
+ .divimg img {
+ width: 100%;
+ height: 100%;
+ }
