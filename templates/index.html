@@ -17,10 +17,13 @@
     <h1>Popular Now <object class="trend-svg" data="{% static 'svgs/trend-up-bold-svgrepo-com.svg' %}"
             type="image/svg+xml"></object></h1>
     <div class="articles-section">
-        {% for article in popular_news %}
-        {% include "components/article.html" %}
-        <div class="article-end-line"></div>
-        {% endfor %}
+        <div class="articles-section-row">
+            {% for article in popular_news %}
+            <div class="articles-section-col">
+                {% include "components/article.html" %}
+            </div>
+            {% endfor %}
+        </div>
     </div>
 </section>
 

@@ -286,10 +286,8 @@ header i {
 .popular-section {
     margin-top: 5vh;
     position: relative;
-    display: flex;
     justify-content: center;
     align-items: flex-start;
-    flex-direction: column;
     margin-left: 3vw;
 }
 
@@ -298,7 +296,7 @@ header i {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.7rem;
+    font-size: 2rem;
 }
 
 .popular-section .trend-svg {
@@ -306,7 +304,16 @@ header i {
     width: 40px;
     height: 40px;
 }
+.articles-section-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
+.articles-section-col {
+    width: 48%;
+    margin: 1%;
+}
 
 /*============= Top Category News =============*/
 .top-category-news {
