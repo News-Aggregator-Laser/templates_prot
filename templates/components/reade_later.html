@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<section class="popular-section">
+   <div style="width:100%">
+       <div style =" display:inline-block;"><h1>Reade Later</h1></div>
+<div style=" float:right; display:inline-block; width:15%;height:50px;">
+   <div style="display:inline-block;color :black;" ><i  class="fa-solid fa-filter" aria-hidden="true" >kkk</i></div>
+   <div style="display:inline-block;color :black;" > <i class="fa-solid fa-magnifying-glass" >mm</i></div>
+    </div>
+   </div>
+    <div class="articles-section">
+        {% for article   in popular_news %}
+       <div class="article">
+    <div class="article-info-cont">
+        <h3><a href="#">{{ article.title }}</a></h3>
+        <p>{{ article.sub_title }}</p>
+        <br>
+        <h3><a href="#">View All >></a></h3>
+    </div>
+    <div class="article-img-cont" style="width:900px;">>
+        <img src="{{ article.image_url }}" alt="{{ article.title }}">
+    </div>
+</div>
+        <div class="article-end-line"></div>
+        {% endfor %}
+    </div>
+</section>
+
+</body>
+</html>
