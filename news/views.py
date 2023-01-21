@@ -9,7 +9,7 @@ def home(request):
         top_news = New.objects.all()[:5]
     popular_news = New.objects.all().order_by("-published_at")[:10]
     selected_categories = [
-        "Sport",
+        "Sports",
         "Health",
         "Business",
         "Technology",
@@ -31,7 +31,29 @@ def home(request):
             "top_news": top_news,
             "popular_news": popular_news,
             "selected_categories": selected_categories,
-            "authenticated": True,
+            "authenticated": False,
             "top_in_categories": top_in_categories,
+        },
+    )
+
+
+def category(request, category: str):
+    category_news = New.objects.filter(category=category.lower())
+    selected_categories = [
+        "Sports",
+        "Health",
+        "Business",
+        "Technology",
+        "Entertainment",
+        "Politics",
+    ]
+    return render(
+        request,
+        "category_news.html",
+        {
+            "category": category,
+            "category_news": category_news,
+            "selected_categories": selected_categories,
+            "authenticated": False,
         },
     )

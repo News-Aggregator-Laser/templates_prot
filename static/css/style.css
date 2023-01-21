@@ -283,8 +283,8 @@ header i {
 }
 
 
-/*============= Popular Now Section =============*/
-.popular-section {
+/*============= Articles View Section =============*/
+.articles-display-section {
     margin-top: 6vh;
     position: relative;
     display: flex;
@@ -295,14 +295,33 @@ header i {
     margin-right: 3vw;
 }
 
-.popular-section h1 {
+.articles-display-section h1 {
     margin-bottom: 5vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    text-transform: capitalize;
     font-size: 2rem;
 }
 
+.articles-display-top {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.articles-display-section .articles-display-btns {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.articles-display-section .articles-display-btns i {
+    font-size: 1.2rem;
+}
+
+
+/*============= Popular Now Section =============*/
 .popular-section .trend-svg {
     padding-left: 5px;
     width: 40px;
@@ -560,4 +579,3 @@ footer .category a {
 .categ-text {
     margin-left: 100px;
 }
-

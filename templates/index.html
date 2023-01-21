@@ -5,12 +5,6 @@
 {% block content %}
 {% include "components/slider.html" %}
 
-<!--lshufon-->
-{% include "components/categorie.html" %}
-
-
-
-
 
 <section class="top-categories-news">
     {% for category, articles in top_in_categories.items %}
@@ -20,7 +14,7 @@
 </section>
 
 
-<section class="popular-section">
+<section class="articles-display-section popular-section">
     <h1>Popular Now <object class="trend-svg" data="{% static 'svgs/trend-up-bold-svgrepo-com.svg' %}"
             type="image/svg+xml"></object></h1>
     <div class="articles-section">

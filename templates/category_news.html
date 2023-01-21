@@ -1,0 +1,24 @@
+{% extends '__base.html' %}
+{% load static %}
+
+
+{% block content %}
+<section class="articles-display-section">
+    <div class="articles-display-top">
+        <h1>{{ category }} News</h1>
+        <div class="articles-display-btns">
+            <div> <i class="bi bi-search"></i></div>
+            <div><i class="bi bi-funnel-fill"></i></div>
+        </div>
+    </div>
+    <div class="articles-section">
+        {% if category_news%}
+        {% for article in category_news %}
+        {% include "components/article.html" %}
+        {% endfor %}
+        {% else %}
+        <h3>Sorry! No News for '{{ category }}' at this moment...</h3>
+        {% endif %}
+    </div>
+</section>
+{% endblock %}
