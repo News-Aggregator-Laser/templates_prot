@@ -1,8 +1,9 @@
 <div class="article">
     <div class="article-info-cont">
-        <h3><a href="#">{{ article.title }}</a></h3>
+        <h3><a href="{% url 'view-post' article.id %}">{{ article.title }}</a></h3>
         <p>{{ article.sub_title }}</p>
         <br>
+
     </div>
     <div class="article-img-cont">
         <img src="{{ article.image_url }}" alt="{{ article.title }}">

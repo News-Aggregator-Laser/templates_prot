@@ -3,6 +3,7 @@ import random
 from .models import New
 
 # Create your views here.
+
 def home(request):
     top_news = New.objects.filter(top_new=True)
     if not top_news:
@@ -35,3 +36,26 @@ def home(request):
             "top_in_categories": top_in_categories,
         },
     )
+
+
+
+def view_post(request, pk=None):
+
+    article = New.objects.get(id=pk)
+    context = {
+        'article': article,
+    }
+    return render(request, 'components/article_view.html', context)
+
+
+def view_categorie(request, pk=None):
+
+    return render(request, 'components/categorie.html')
+
+
+
+
+
+
+
+
