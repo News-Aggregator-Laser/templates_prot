@@ -209,7 +209,6 @@ header i {
 .swiper-button-next {
     background-color: rgba(0, 0, 0, 0.5);
     color: var(--accent-color) !important;
-    color: var(--accent-color) !important;
     fill: var(--accent-color) !important;
     stroke: var(--accent-color) !important;
     padding: 25px;
@@ -284,21 +283,22 @@ header i {
 
 /*============= Popular Now Section =============*/
 .popular-section {
-    margin-top: 5vh;
+    margin-top: 6vh;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
     margin-left: 3vw;
+    margin-right: 3vw;
 }
 
 .popular-section h1 {
-    margin-bottom: 3vh;
+    margin-bottom: 5vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.7rem;
+    font-size: 2rem;
 }
 
 .popular-section .trend-svg {
@@ -523,6 +523,7 @@ width:80px;
 color: blanchedalmond;
 border-radius:20% ;
 }
+
 .divimg {
 width : 80%;
 height :450px;
@@ -534,3 +535,26 @@ height :450px;
  height: 100%;
  }
 
+footer .category-container {
+    width: 50%;
+    float: left;
+    margin-left: 200px;
+}
+
+footer .category {
+    width: 50%;
+    float: left;
+    margin-top: 20px;
+}
+
+footer .category a {
+    font-size: 0.9rem;
+}
+
+.clear {
+    clear: both;
+}
+
+.categ-text {
+    margin-left: 100px;
+}
