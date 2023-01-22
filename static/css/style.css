@@ -52,6 +52,7 @@ body::-webkit-scrollbar-thumb {
     justify-content: space-evenly;
     align-items: center;
     height: 6vh;
+    z-index: 10;
 }
 
 .categories-cont {
@@ -208,7 +209,6 @@ header i {
 .swiper-button-next {
     background-color: rgba(0, 0, 0, 0.5);
     color: var(--accent-color) !important;
-    color: var(--accent-color) !important;
     fill: var(--accent-color) !important;
     stroke: var(--accent-color) !important;
     padding: 25px;
@@ -265,12 +265,10 @@ header i {
 
 /*============= Articles Section =============*/
 .articles-section {
-    width: 100%;
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    justify-content: center;
     align-items: flex-start;
-    flex-direction: row;
+    flex-direction: column;
     gap: 1vh;
 }
 
@@ -283,8 +281,8 @@ header i {
 }
 
 
-/*============= Articles View Section =============*/
-.articles-display-section {
+/*============= Popular Now Section =============*/
+.popular-section {
     margin-top: 6vh;
     position: relative;
     display: flex;
@@ -295,33 +293,14 @@ header i {
     margin-right: 3vw;
 }
 
-.articles-display-section h1 {
+.popular-section h1 {
     margin-bottom: 5vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    text-transform: capitalize;
     font-size: 2rem;
 }
 
-.articles-display-top {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-}
-
-.articles-display-section .articles-display-btns {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-}
-
-.articles-display-section .articles-display-btns i {
-    font-size: 1.2rem;
-}
-
-
-/*============= Popular Now Section =============*/
 .popular-section .trend-svg {
     padding-left: 5px;
     width: 40px;
@@ -435,7 +414,6 @@ footer {
     display: flex;
     flex-wrap: wrap;
     position: relative;
-    min-height: 600px;
 }
 
 .subscribe-section {
@@ -443,6 +421,7 @@ footer {
     color: white;
     width: 100vw;
     text-align: center;
+    height: 250px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -461,6 +440,7 @@ footer {
     color: black;
     width: 100%;
     display: flex;
+    height: 453px;
 }
 
 .form-container {
@@ -501,6 +481,7 @@ footer {
 }
 
 .col-1,
+.col-2,
 .col-3 {
     width: 33%;
     text-align: center;
@@ -510,7 +491,6 @@ footer {
     font-size: 1.2em;
     line-height: 1.5;
     word-wrap: break-word;
-    margin-top: 35px;
 }
 
 .copyright-text {
@@ -537,24 +517,23 @@ footer .social-icons i {
 
 
 .cbtn {
-    background-color: black;
-    height: 30px;
-    width: 80px;
-    color: blanchedalmond;
-    border-radius: 20%;
+background-color:black;
+height:30px;
+width:80px;
+color: blanchedalmond;
+border-radius:20% ;
 }
 
 .divimg {
-    width: 80%;
-    height: 450px;
-    position: center;
-    background-color: black;
-}
-
-.divimg img {
-    width: 100%;
-    height: 100%;
-}
+width : 80%;
+height :450px;
+ position : center ;
+ background-color: black;
+ }
+ .divimg img {
+ width: 100%;
+ height: 100%;
+ }
 
 footer .category-container {
     width: 50%;

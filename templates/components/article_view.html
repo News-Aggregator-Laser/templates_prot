@@ -1,7 +1,15 @@
+{% extends '__base.html' %}
+{% load static %}
+
+
+{% block content %}
+
+
+
 <div>
     <button class = "cbtn"> category</button>
 <h1>{{ article.title }}</h1>
-<h2 > {{ article.sub_title }}/ description </h2>
+<h2 > {{ article.sub_title}}/ description </h2>
 {{ article.author}}- {{ article.published_at}}
 <br><br>
 <div class = "divimg"> <img  src="{{ article.image_url }}" alt="{{ article.title }}"></div>
@@ -13,3 +21,5 @@
  <br> <br> source :{{ article.provider}}
 </div>
 </div>
+
+{% endblock %}
